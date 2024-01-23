@@ -1,0 +1,42 @@
+.settings__setting {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 22px;
+  opacity: 0.8;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}
+
+.settings__notice {
+  color: tomato;
+}
+
+#setting-screen .alt-header,
+#setting-screen .status-bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#setting-screen main {
+  margin-top: 100px;
+}
+
+#setting-screen .status-bar {
+  z-index: 2;
+}
+
+#setting-screen .alt-header {
+  z-index: 1;
+}

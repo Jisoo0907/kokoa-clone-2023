@@ -1,0 +1,19 @@
+#no-mobile {
+  position: absolute;
+  z-index: 99; /* 가장 위에 올라오게 */
+  height: 100vh; /* 화면 높이만큼 */
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex; /* 645보다 크면 문구 보여줌 */
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    /* 645px거나 이보다 작으면 문구 안 보여줌 */
+    display: none;
+  }
+}
